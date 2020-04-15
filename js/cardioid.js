@@ -6,7 +6,7 @@ var total = 300;
 function setup() {
     colorMode(HSB);
     createCanvas(windowWidth, windowHeight);
-    r = height / 2 - 16;
+    r = windowHeight / 2 - 16;
 }
 
 function getVector(index, total) {
@@ -20,9 +20,9 @@ function draw() {
     background(0);
 
     factor += rate;
-    if(factor >= 10 || factor < 0)  {rate *= -1;}
+    if(factor >= 6 || factor < 0)  {rate *= -1;}
 
-    translate(width / 2, height / 2);
+    translate(windowWidth / 2, windowHeight / 2);
     stroke(factor * 100 % 360, 100, 50);
     noFill();
     ellipse(0, 0, r * 2);
