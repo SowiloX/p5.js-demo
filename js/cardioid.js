@@ -5,7 +5,7 @@ var total = 300;
 
 function setup() {
     colorMode(HSB);
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(windowWidth-0.1, windowHeight);
     r = windowHeight / 2 - 16;
 }
 

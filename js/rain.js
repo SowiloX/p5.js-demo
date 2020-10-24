@@ -30,7 +30,7 @@ var s;
 var b;
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(windowWidth-0.1, windowHeight);
     h = 0; s = 80; b = 30;
     for(var i = 0; i < 300; i++) {
         rain[i] = new Drop();

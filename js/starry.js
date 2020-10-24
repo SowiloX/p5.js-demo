@@ -29,7 +29,7 @@ function Star() {
 var stars = [];
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(windowWidth-0.1, windowHeight);
     for(var i = 0; i < 1000; i++) {
         stars[i] = new Star();
     }
